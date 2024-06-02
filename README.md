@@ -48,7 +48,7 @@ Certifique-se de ter o Node.js e npm instalados em seu sistema. Você pode baixa
 1. Crie sua própria branch a partir da branch development.
 2. Faça suas alterações no código.
 3. Certifique-se de que seus commits sejam claros e descritivos.
-4. Quando estiver satisfeito com suas alterações, abra um Pull Request.
+4. Quando estiver satisfeito com suas alterações, faça merge com a branch development e abra um Pull Request.
 
 Obrigado por ajudar a melhorar este projeto!
 
