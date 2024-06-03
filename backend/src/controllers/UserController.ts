@@ -30,6 +30,10 @@ class UserController {
         password: hashedPassword
       })
 
+      if (!user) {
+        return res.status(402).json({ errors: ["Houve um erro ao cadastrar o usuário"]})
+      }
+
       res.status(200).json({message: "Usuário cadastrado com sucesso!", user})
 
     } catch (error) {
