@@ -1,6 +1,6 @@
 # Annoty
 
-Este é um projeto de criaçao de cards estilo kanban.
+Um projeto full stack para gerenciamento de tarefas.
 
 ## Pré-requisitos
 
