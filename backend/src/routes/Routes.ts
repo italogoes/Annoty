@@ -9,5 +9,6 @@ const { userCreateValidator } = require("../middlewares/UserValidation")
 
 routes.get("/api/users", User.getUser)
 routes.post("/api/register", validate, userCreateValidator(), User.addUser)
+routes.post("/api/login", User.loginUser)
 
 export default routes

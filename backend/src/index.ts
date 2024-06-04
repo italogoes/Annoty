@@ -3,6 +3,11 @@ import cors from "cors";
 import sequelize from "./config/Connection";
 import routes from "./routes/Routes"
 import bodyParser from "body-parser";
+import dotenv from "dotenv"
+
+dotenv.config()
+
+const secretKey = process.env.SECRET_KEY
 
 const app = express()
 
