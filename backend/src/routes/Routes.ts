@@ -15,7 +15,7 @@ routes.post("/api/login", User.loginUser)
 
 // Project route
 routes.get("/api/projects", authenticate, Project.getProjects)
-routes.post("/api/projects")
+routes.post("/api/projects", authenticate, Project.addProject)
 routes.put("/api/projects/:id")
 routes.delete("/api/projects/:id")
 
