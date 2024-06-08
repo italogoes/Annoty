@@ -2,8 +2,15 @@ import express from "express";
 import cors from "cors";
 import sequelize from "./config/Connection";
 import routes from "./routes/Routes"
+import bodyParser from "body-parser";
+import dotenv from "dotenv"
+
+dotenv.config()
 
 const app = express()
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // const corsOptions = {
 //     origin: 'http://example.com', // substitua com o domínio que você quer permitir
