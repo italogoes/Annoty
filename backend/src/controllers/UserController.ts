@@ -24,7 +24,8 @@ class UserController {
       const checkExistingUser = await UserModel.findOne({ where: { email: email } })
 
       if (checkExistingUser) {
-        return res.status(400).json({ message: "Usuário já existe." })
+        //return res.status(400).json({ message: "Usuário já existe." })
+        throw new Error("Já existe um usuário cadastrado com esse e-mail, tente outro e-mail ou faça login!")
       }
 
       const user = await UserModel.create({
@@ -39,8 +40,8 @@ class UserController {
 
       res.status(200).json({ message: "Usuário cadastrado com sucesso!", user })
 
-    } catch (error) {
-      res.status(400).json({ message: "Erro ao cadastrar usuário.", error })
+    } catch (error: any) {
+      res.status(400).json({error: error.message})
     }
   }
 
