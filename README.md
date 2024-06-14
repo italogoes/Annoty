@@ -2,6 +2,8 @@
 
 Um projeto full stack para gerenciamento de tarefas.
 
+Layout de inspiração para criar o frontend: https://go.glideapps.com/template/u5H0Nm4HEKuNaQWnYKru-template/dl/d0a5f4
+
 ## Pré-requisitos
 
 Certifique-se de ter o Node.js e npm instalados em seu sistema. Você pode baixar o Node.js em [nodejs.org](https://nodejs.org/).
